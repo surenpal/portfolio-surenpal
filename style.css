@@ -9,84 +9,111 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #F5EEF8;
-  
-}
-header {
-  background-color: #FDEDEC ;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  padding: 0 50px;
-}
-header .logo {
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  padding-top: 15px;
-  text-transform: none;
-}
-header nav ul {
-  display: flex;
-  height: 70px;
-  justify-content: center;
-  align-items: center;
-}
-header nav ul li a {
-  font-size: 25px;
-  display: flex;
-  color: #000;
-  border: 3px solid transparent;
-  transition: 0.2s;
-}
-header nav ul li a:hover,
-header nav ul li a.active {
-  border-bottom-color: #566573;
-}
-.hamburger {
-  cursor: pointer;
-  display: none;
-}
-.hamburger div {
-  width: 30px;
-  height: 3px;
-  margin: 5px 0;
-  background: #000;
-}
-@media only screen and (max-width: 900px) {
-  header {
-      padding: 0 30px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .hamburger {
-      display: block;
-  }
-  header nav {
-      position: absolute;
-      width: 100%;
-      left: -100%;
-      top: 70px;
-      width: 100%;
-      background: #fff;
-      padding: 30px;
-      transition: 0.3s;
-  }
-  header #nav_check:checked ~ nav {
-      left: 0;
-  }
-  header nav ul {
-      display: block;
-      height: 70px;
-  }
-  header nav ul li a {
-      margin: 5px 0;
-  }
+  background-color: #edebee;
   
 }
 
+nav{
+  display: block;
+  background: #bcb7b5;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  height: 60px;
+  color: rgb(157, 39, 39);
+  font-size: 35px;
+  padding: 0 100px;
+  font-weight: bold;
+  
+}
+nav ul{
+  height: 60px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 385px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0 5px;
+  
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a{
+  color: rgb(134, 35, 35);
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    padding-top: 20px;
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
 .profile{
-  padding-top: 90px;
+  padding-top: 100px;
   width: 100%;
   height: 600px;
   background-image: url(images/bg.jpg);
@@ -142,7 +169,16 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+
 }
+
+
+
+
+
+
+
+
 
 
 .projects{
@@ -225,8 +261,10 @@ footer{
   background-color: #c2bdc2;
   height: auto;
 }
-nav{
-  height: 50px;
+
+
+/*nav{
+  height: 80px;
   width: 100%;
 }
 nav ul{
@@ -247,11 +285,3 @@ nav ul li a{
 nav p{
   display: flex;
 }
-
-
-
-
-
-
-
-

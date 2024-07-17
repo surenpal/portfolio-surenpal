@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;    
+  font-family: "poppins", sans-serif;
+}
+
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+    
+}
+
+section{
+
+  display: relative;
+}
+.Home{
+  background-color: #2A2524;
+  border-bottom: solid 1px cornflowerblue;
+}
+
+nav{
+  display: block;
+  background: #0e0501;
+  border-bottom: solid 1px cornflowerblue;
+  height: 80px;
+  width: 100%;
+}
+.logo{
+  height: 60px;
+  color: #868382;
+  font-size: 35px;
+  padding: 0 100px;
+  font-weight: bold;
+    
+  }
+
+nav ul{
+  height: 60px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 385px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a{
+  color: #E1E0E0;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+
+  }
+  
+a.active,a:hover{
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.socialmedia{
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+  }
+
+.Home img {
+  margin-top: 20px;
+  display: flex;
+  height: 300px;
+  border-radius: 10%;
+  }
+.Home h1{
+  display: flex;
+  color: #EEECF6;
+  font-size: 50px;
+}
+
+.profile{
+  background-color: #2A2524;
+  border-bottom: solid 1px cornflowerblue;
+  padding: 100px;
+}
+
+
+.profile img {
+
+  display: flex;
+  float: left;
+  padding: 100px 40px 5px 200px;
+  height: 300px;
+  border-radius: 50%;
+  }
+
+
+blockquote {
+  display: block;
+  width: 550px;
+  border-left: 10px solid #ccc;
+  margin: 5px 0px 20px 320px;
+  padding: 0.5em 10px;
+  }
+  
+blockquote:before {
+  color: #9a909a;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  }
+blockquote p {
+  display: inline;
+  }
+
+  blockquote p >i {
+    color: #D61223 !important;
+    }
+  
+
+h2{
+
+  padding-top: 100px;
+  display: block;
+  color: #983622;
+ }
+  
+h2:hover{
+  
+  color: 	#E1E0E0;
+  text-decoration-line: underline;
+  text-decoration-color: cadetblue;
+  
+  }
+h4{
+  margin-top: 5px;
+  display: block;
+  color: #868382;
+  }
+p{
+  padding-top: 5px;
+  }
+  
+
+.projects{
+  background-color: #2A2524;
+  border-bottom: solid 1px cornflowerblue;
+}
+
+.projects h1{
+  display: block;
+}
+
+
+.flex-container {
+  display: flex;
+  background-color: rgb(94, 99, 104);
+}
+
+.flex-container > div {
+  display: flexbox;
+  background-color: #936464;
+  margin: 10px;
+  padding: 20px;
+  height: 400px;
+  width: 350px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+.contact{
+  margin-top: 5px;
+  background-color: #2A2524;
+  border-bottom: solid 1px #eeab9e;
+}
+.contact h1{
+  display: block;
+}
+form{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /*padding: 15px 30px;*/
+  border-radius: 10px;
+
+}
+
+form h3{
+  color: black;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: white;
+  font-size: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+form button{
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgb(251, 248, 248);
+  border-color: pink;
+  cursor: pointer;
+}
+footer{
+  background-color: #c2bdc2;
+  height: auto;
+
+}
+

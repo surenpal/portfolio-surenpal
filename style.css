@@ -67,6 +67,7 @@ a.active,a:hover{
 #check{
   display: none;
 }
+/*
 @media (max-width: 952px){
   label.logo{
     padding-top: 20px;
@@ -76,10 +77,12 @@ a.active,a:hover{
   nav ul li a{
     font-size: 16px;
   }
+
 }
 @media (max-width: 858px){
   .checkbtn{
     display: block;
+
   }
   ul{
     position: fixed;
@@ -104,13 +107,23 @@ a.active,a:hover{
   }
   #check:checked ~ ul{
     left: 0;
+    display: block;
   }
+  .about-me, .contact, .profile, .projects, .socialmedia{
+    min-width: 800px;
+    position: relative;
+  }
+ 
 }
+*/
+
+
 
 section{
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
-  height: calc(100vh - 80px);
+  /*height: calc(100vh - 80px);*/
+  height: 100vh;
 }
 .profile{
   padding-top: 100px;
@@ -174,18 +187,11 @@ blockquote p {
 
 
 
-
-
-
-
-
-
-
 .projects{
 
   height: auto;
-  background-image:url("/images/bg1.jpg" );
   background-size: cover;
+  background-color: #DECACA;
 
 }
 
@@ -205,14 +211,13 @@ blockquote p {
   width: 100%;  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #cb63c6;
+  background-color: #efdfdf;
 }
 
 form{
   height: auto;
   display: flex;
   flex-direction: column;
-  width: 50%;
   padding: 15px 30px;
   border-radius: 10px;
 
@@ -247,10 +252,11 @@ form button{
 }
 
 .socialmedia{
-  margin-left: 310px;
-  flex-direction: column;
+  background-color: #566573;
+  margin-left: 150px;
   display: flex;
-  color: #F5EEF8;
+  flex-direction: column;
+  
 
 }
 

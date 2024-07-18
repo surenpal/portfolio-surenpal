@@ -78,7 +78,6 @@ nav ul li a:hover{
 .Home h1{
   display: flex;
   float: right;
-  width: 800px;
   color: #bec1da;
   font-size: 50px;
   padding-top: 50px;
@@ -237,5 +236,18 @@ form button{
 }
 .footer nav{
   padding-left: 150px;
+}
+
+.animation {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.4s;
+
+}
+/* This is the part where the animation CSS is written for the app.js*/
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
 }
 

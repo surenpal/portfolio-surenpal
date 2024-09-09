@@ -16,43 +16,47 @@
     <div class="container">
         <section class="Home">
 
-            <nav>
-                <label class="logo">SuReN</label>
-                <ul>
-                  <li><a class="active" href="#">Home</a></li>
-                  <li><a href="#">About Me</a></li>
-                  <li><a href="#">Project</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <header>
+                <nav>
+                    <ul class='nav-bar'>
+                        <li class="logo"><i id="L1">Su</i><i id="L2">Ren</i></li>
+                        <input type='checkbox' id='check' />
+                        <span class="menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Me</a></li>
+                            <li><a href="">Projects</li>
+                            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                        </span>
+                        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                    </ul>
+                </nav>
+                </header>
+
             
 
             <div class="image" img src="images/portfolio_image.png" alt="suren_pal"></div>
+            <div class="me"> <h1>Hi,Iam SurenPal<br>
+            & I`am a Junior Front-End Developer
+            </h1></div>
 
-            <h1>Hi, Iam SurenPal<br>
-                & I`am a Junior Front-End Developer
-            </h1>
-
-            <button class="button">Contact Me</button>
+           <button class="button">Contact Me</button>
 
             
 
         </section>
+
+
+
         <section class="profile">
             
 
-        <!--    <div class="image">
-            <img src="images/portfolio_image.png" alt="suren pal">
-            </div>  
-        -->
-
-            
+   
         <div class="About Me">
 
 
             <h2>About Me</h2>
             <h4>Junior Front-end Developer</h4>
-            <p class="scroll-animation">I have completed my IT course this year in March, after <br>
+            <p I have completed my IT course this year in March, after <br>
                 The completion of the course I am continuously learning<br>
                 through YouTube videos and the internet. I try to figure<br>
                 out how the websites work on the internet and the stages <br>
@@ -96,34 +100,10 @@
             <div class="flex-container">
                 <div>Project 1</div>
                 <div>Project 2</div>
-                <div>Project 3</div>  
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam et soluta neque. Eius id cumque in facilis, vel at adipisci neque saepe fugiat! Minus obcaecati dolore, accusamus aliquid sit eligendi.</p>
 
         </section>
-
-
-        <section class="contact">
-            <h1>Contact Me</h1>
-
-
-            <form action="https://formsubmit.co/65360dcc1e01bdcd15af4e0f7bbedb1c" method="post">
-
-                <h3>Leave Your inquiries</h3>
-
-                
-
-                <input type="text" name="" id="name" placeholder="Your Name" required>
-                <input type="email" name="" id="Email" placeholder="Email Address" required>
-                <input type="text" name="" id="Contact Num" placeholder="Contact Number" required>
-                <textarea  id="message" rows="4" placeholder="Leave your inquiries pls!!!"></textarea>
-                <button type="submit">SEND</button>
-
-            </form>
-
-
-        </section>
-
 
         <section class="footer">
             <nav>
@@ -135,11 +115,7 @@
                     <li>
                         <a href="#projects">Projects</a>
                     </li>
-    
-                    <li>
-                        <a href="#contacts">contact</a>
-                    </li>
-                </ul>
+                    </ul>
 
     
             </nav>

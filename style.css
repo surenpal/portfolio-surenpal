@@ -160,37 +160,38 @@ section{
 
 .About-me{
   
+  display: flex;
 
 }
 
+.p{
+  padding-top: 5px;
+  text-decoration: none;
+  }
 
 
 
-h2{
+
+.h2{
   padding-left: 100px;
   padding-top: 100px;
   display: block;
   color: #983622;
  }
-  
-h2:hover{
-  
+
+.h2:hover{
   color: 	#E1E0E0;
-  text-decoration-line: underline;
   text-decoration-color: cadetblue;
-  
+
   }
-h4{
+
+.h4{
   padding-left: 100px;
   margin-top: 5px;
   display: block;
   color: #868382;
   }
-p{
-  padding-top: 5px;
-  padding-left: 100px;
-  text-decoration: none;
-  }
+
 
 .projects{
   

@@ -1,43 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;    
+  box-sizing: border-box;
   font-family: "poppins", sans-serif;
+  text-decoration: none;
   color: white;
 }
 
-.container{
+.container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-    
 }
 
-section{
+section {
   display: relative;
 }
-.Home{
-  background-color: #2A2524;
+.Home {
+  padding: 50px;
+  background-color: #2a2524;
   border-bottom: solid 1px cornflowerblue;
 }
 
-.logo{
+.logo {
   height: 60px;
   font-size: 35px;
   padding: 0 100px;
+}
 
-  }
-
-  #L1{
-    color: #EFF0F9;
-    font-weight: 900;
-  }
-  #L2{
-    color:  #1223D6;
-    font-weight: 100;
-  }
-
+#L1 {
+  color: #eff0f9;
+  font-weight: 900;
+}
+#L2 {
+  color: #1223d6;
+  font-weight: 100;
+}
 
 .nav-bar {
   width: 100%;
@@ -49,8 +48,12 @@ section{
   background-color: var(--color2);
   padding: 12px 20px;
 }
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
+.menu {
+  display: flex;
+}
+.menu li {
+  padding-left: 30px;
+}
 .menu li a {
   display: inline-block;
   text-decoration: none;
@@ -70,8 +73,11 @@ section{
   background-color: var(--color1);
   transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {width: 100%;}
-.open-menu , .close-menu {
+.menu li a:hover:after {
+  width: 100%;
+}
+.open-menu,
+.close-menu {
   position: absolute;
   color: var(--color1);
   cursor: pointer;
@@ -87,45 +93,50 @@ section{
   top: 20px;
   right: 20px;
 }
-#check {display: none;}
-@media(max-width: 610px){
+#check {
+  display: none;
+}
+@media (max-width: 610px) {
   .menu {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      right: -100%;
-      z-index: 100;
-      background-color: var(--color2);
-      transition: all 0.2s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--color2);
+    transition: all 0.2s ease-in-out;
   }
-  .menu li {margin-top: 40px;}
-  .menu li a {padding: 10px;}
-  .open-menu , .close-menu {display: block;}
-  #check:checked ~ .menu {right: 0;}
-
-
-  
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
 }
 
-
-
-.image{
+.image {
   margin-top: 20px;
   margin-left: 80px;
   display: inline-block;
   width: 250px;
   height: 350px;
   border-radius: 40%;
-  background-image: url('images/portfolio_image.png');
+  background-image: url("images/portfolio_image.png");
   background-size: cover;
-  }
- 
+}
 
-.me{
+.me {
   display: flex;
   float: right;
   margin-top: 100px;
@@ -136,121 +147,155 @@ section{
   align-items: center;
 }
 
-
-
-.button{
+.button {
   display: flex;
   margin: 0px 0px 50px 500px;
   height: 50px;
   width: 110px;
-  background-color: #D61223;
+  background-color: #d61223;
   color: white;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
 }
 
-
-
-.profile{
-  background-color: #2A2524;
+.profile {
+  background-color: #2a2524;
   border-bottom: solid 1px cornflowerblue;
-  padding: 100px;
+  padding: 70px;
 }
 
-.About-me{
-  
+.about-me {
+  display: inline-block;
+  background-color: #983622;
   display: flex;
-
 }
 
-.p{
-  padding-top: 5px;
-  text-decoration: none;
-  }
-
-
-
-
-.h2{
+.about-me h2 {
   padding-left: 100px;
   padding-top: 100px;
   display: block;
   color: #983622;
- }
+  background-color: #1223d6;
+}
 
-.h2:hover{
-  color: 	#E1E0E0;
+.about-me h2:hover {
+  color: #e1e0e0;
   text-decoration-color: cadetblue;
+  text-decoration: underline;
+}
 
-  }
-
-.h4{
+.about-me h4 {
   padding-left: 100px;
   margin-top: 5px;
   display: block;
   color: #868382;
-  }
+  text-decoration: none;
+  background-color: #1223d6;
+}
 
+.about-me h4:hover {
+  text-decoration-color: cadetblue;
+  text-decoration: underline;
+}
 
-.projects{
-  
+.about p {
+  padding-top: 5px;
+  background-color: #1223d6;
+}
+
+.img {
+  float: right;
+}
+
+.box1 {
+  background-color: #1223d6;
+  margin-top: 10px;
+}
+.box2 {
+  background-color: #1223d6;
+  margin-top: 10px;
+}
+.box3 {
+  background-color: #1223d6;
+  margin-top: 10px;
+}
+.box4 {
+  background-color: #1223d6;
+  margin-top: 10px;
+}
+.box5 {
+  background-color: #1223d6;
+  margin-top: 10px;
+}
+.box6 {
+  background-color: #1223d6;
+  margin-top: 10px;
+}
+
+.projects {
+  padding: 50px;
   border-bottom: solid 1px cornflowerblue;
-  background-color: #1223D6;
+  background-color: #2a2524;
   display: inline-block;
   width: 100%;
 }
 
-.projects h1{
-  padding-left: 100px;
+.projects h1 {
+  padding-left: 20px;
+  text-transform: capitalize;
 }
 
-
-.pro-box{
-
+.pro-box {
   margin-right: 50px;
-  padding-left: 100px;
+  padding-left: 20px;
   background-color: rgb(94, 99, 104);
 }
-.P1{
+.box1 {
+  text-decoration: none;
+}
+.box1 h5 {
+  text-decoration: none;
+}
+
+.P1 {
   display: flex;
   float: left;
   height: 600px;
   width: 45%;
-  background-color: #983622;
+  background-color: #a49d9c;
 }
 
-.P2{
+.P2 {
   display: flex;
   float: right;
   height: 600px;
   width: 45%;
-  background-color: #983622;
+  background-color: #a49d9c;
 }
 
-.projects p{
+.projects p {
   display: inline-block;
   background-color: #983622;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 15px;
-  
-  
 }
 
-.footer{
-  background-color: #c2bdc2;
+.footer {
+  background-color: #2a2524;
   height: auto;
 }
 
-.footer nav{
- 
+.footer nav {
+  background-color: #1223d6;
   width: 100%;
   display: flex;
- 
   position: relative;
-  background-color: var(--color2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 12px 20px;
 }
 .footer ul {
@@ -272,14 +317,7 @@ section{
   position: relative;
   text-transform: uppercase;
 }
-.footer li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--color1);
-  transition: 0.15s ease-in-out;
+.footer p {
+  display: block;
+  color: red;
 }
-.footer li a:hover:after {width: 100%;}

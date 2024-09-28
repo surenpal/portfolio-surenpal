@@ -19,7 +19,13 @@ section {
 }
 .Home {
   padding: 50px;
-  background-color: #807b7b;
+  background-image: linear-gradient(
+    to right,
+    rgb(112, 100, 100),
+    rgb(109, 150, 92),
+    rgb(196, 143, 213)
+  );
+
   border-bottom: solid 1px cornflowerblue;
 }
 
@@ -30,7 +36,7 @@ section {
 }
 
 #L1 {
-  color: #eff0f9;
+  color: #400634;
   font-weight: 900;
 }
 #L2 {
@@ -146,13 +152,15 @@ section {
   justify-content: center;
   align-items: center;
 }
-
+.me > h1 {
+  color: white;
+}
 .button {
   display: flex;
   margin: 0px 0px 50px 500px;
   height: 50px;
   width: 110px;
-  background-color: #d61223;
+  background-color: transparent;
   color: white;
   border-radius: 5px;
   justify-content: center;
@@ -160,14 +168,18 @@ section {
 }
 
 .profile {
-  background-color: #807b7b;
+  background-image: linear-gradient(
+    to right,
+    rgb(112, 100, 100),
+    rgb(109, 150, 92),
+    rgb(196, 143, 213)
+  );
   border-bottom: solid 1px cornflowerblue;
   padding: 70px;
 }
 
 .about-me {
   display: inline-block;
-  background-color: #983622;
   padding: 50px;
 }
 
@@ -175,8 +187,7 @@ section {
   padding-left: 100px;
   padding-top: 100px;
   display: block;
-  color: #983622;
-  background-color: #1223d6;
+  color: #400634;
 }
 
 .about-me h2:hover {
@@ -189,9 +200,8 @@ section {
   padding-left: 100px;
   margin-top: 5px;
   display: block;
-  color: #868382;
+  color: #400634;
   text-decoration: none;
-  background-color: #1223d6;
 }
 
 .about-me h4:hover {
@@ -201,7 +211,6 @@ section {
 
 .about-me p {
   padding: 5px;
-  background-color: #1223d6;
   padding-bottom: 70px;
   display: flex;
   float: left;
@@ -214,51 +223,57 @@ section {
 }
 
 .academic {
+  padding-top: 30px;
   display: flex;
-  background-color: #cd0f0f;
   width: 100%;
   height: auto;
-  flex-wrap: wrap;
 }
 .box1 {
-  height: 200px;
+  padding: 10px;
   width: 200px;
-  background-color: #6e7082;
   margin: 10px;
+  float: left;
 }
 
 .box2 {
-  height: 200px;
-  width: 400px;
-  background-color: #6e7082;
+  padding: 10px;
+  height: auto;
   margin: 10px;
+  float: left;
 }
 
 .box3 {
-  height: 200px;
-  width: 400px;
-  background-color: #6e7082;
+  padding: 10px;
   margin: 10px;
+  float: left;
 }
 
 .box4 {
-  height: 200px;
-  width: 400px;
-  background-color: #6e7082;
+  padding: 10px;
   margin: 10px;
 }
 
 .box5 {
-  height: 200px;
-  width: 400px;
-  background-color: #6e7082;
+  padding: 10px;
   margin: 10px;
+}
+.box5,
+.box4 ul {
+  padding: 20px;
+}
+h5 {
+  color: #400634;
 }
 
 .projects {
+  background-image: linear-gradient(
+    to right,
+    rgb(112, 100, 100),
+    rgb(109, 150, 92),
+    rgb(196, 143, 213)
+  );
   padding: 50px;
   border-bottom: solid 1px cornflowerblue;
-  background-color: #807b7b;
   display: inline-block;
   width: 100%;
 }
@@ -298,7 +313,6 @@ section {
 
 .projects p {
   display: inline-block;
-  background-color: #807b7b;
   align-items: center;
   margin-left: 20px;
   margin-top: 30px;
@@ -306,12 +320,16 @@ section {
 }
 
 .footer {
-  background-color: #807b7b;
+  background-image: linear-gradient(
+    to right,
+    rgb(112, 100, 100),
+    rgb(109, 150, 92),
+    rgb(196, 143, 213)
+  );
   height: auto;
 }
 
 .footer nav {
-  background-color: #1223d6;
   width: 100%;
   display: flex;
   position: relative;
@@ -341,5 +359,5 @@ section {
 }
 .footer p {
   display: block;
-  color: red;
+  color: rgb(119, 218, 48);
 }

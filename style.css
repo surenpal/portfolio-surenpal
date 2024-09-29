@@ -47,7 +47,7 @@ section {
 .nav-bar {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
   position: relative;
@@ -58,6 +58,8 @@ section {
   display: flex;
 }
 .menu li {
+  align-items: center;
+  justify-content: space-evenly;
   padding-left: 30px;
 }
 .menu li a {
@@ -68,6 +70,8 @@ section {
   transition: 0.15s ease-in-out;
   position: relative;
   text-transform: uppercase;
+  font-weight: 500;
+  padding: 20px;
 }
 .menu li a::after {
   content: "";
@@ -288,11 +292,16 @@ h5 {
   padding-left: 20px;
   background-color: rgb(94, 99, 104);
 }
+/*
 .box1 {
   text-decoration: none;
 }
 .box1 h5 {
   text-decoration: none;
+}
+  
+.pro-box > img {
+  display: inline;
 }
 
 .P1 {
@@ -309,6 +318,23 @@ h5 {
   height: 600px;
   width: 45%;
   background-color: #a49d9c;
+}
+*/
+.projects .img1 {
+  display: flex;
+  float: left;
+  height: 600px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10%;
+}
+.projects .img2 {
+  display: flex;
+  float: right;
+  height: 600px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10%;
 }
 
 .projects p {
@@ -333,22 +359,21 @@ h5 {
   width: 100%;
   display: flex;
   position: relative;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
 }
 .footer ul {
   display: flex;
   list-style: none;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-evenly;
+  margin-left: 40px;
 }
 .footer li {
-  padding-left: 30px;
   text-decoration: none;
 }
 .footer li a {
+  padding-top: 20px;
   display: inline-block;
   text-decoration: none;
   color: var(--color1);
@@ -358,6 +383,9 @@ h5 {
   text-transform: uppercase;
 }
 .footer p {
-  display: block;
-  color: rgb(119, 218, 48);
+  padding-bottom: 20px;
+  display: flex;
+  color: rgb(231, 234, 228);
+  align-items: center;
+  justify-content: center;
 }

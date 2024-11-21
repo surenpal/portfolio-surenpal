@@ -252,6 +252,7 @@
 }
 
 .footer {
+  color: blue;
 }
 
 .footer nav {
@@ -267,6 +268,7 @@
   text-decoration: none;
 }
 .footer ul li a {
+  color: #1223d6;
 }
 
 .footer p {

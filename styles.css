@@ -5,10 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
-  height: 1000px;
 }
 
-.Home {
+.home {
   background-image: url(images/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,22 +121,20 @@
     right: 0;
   }
 }
-
+.hero {
+  display: flex;
+}
 .image {
   margin: 20px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   width: 250px;
   height: 350px;
   border-radius: 40%;
-  background-image: url("images/portfolio_image.png");
   background-size: cover;
 }
 
 .me {
   display: flex;
-  float: left;
   justify-content: center;
   align-items: center;
   color: #bec1da;
@@ -146,11 +143,11 @@
 }
 
 .button {
-  display: inline;
+  display: flex;
   background-color: #400634;
 }
 .btn {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 50px;
@@ -174,8 +171,7 @@
 }
 
 .about-me {
-  display: inline-block;
-  padding: 50px;
+  background-color: none;
 }
 
 .about-me h2 {
@@ -208,12 +204,12 @@
   padding: 5px;
   padding-bottom: 70px;
   display: flex;
-  float: left;
+  justify-content: center;
+  align-items: center;
 }
 
 .aside {
   display: flex;
-  float: right;
   justify-content: center;
   align-items: center;
 }
@@ -255,8 +251,12 @@
   color: blue;
 }
 
-.footer nav {
-  display: flex;
+.footer {
+  background-image: url(images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .footer ul {
   display: flex;

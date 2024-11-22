@@ -7,7 +7,6 @@
   font-family: "poppins", sans-serif;
 }
 body {
-  height: 1000dvh;
   background-image: url(images/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,30 +236,44 @@ body {
   height: 210px;
 }
 .projects {
-  background-image: url(images/bg1.jpg);
+}
+.projects h4 {
+  color: white;
+  text-align: center;
 }
 
 .my-projects {
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+}
+
+@media (max-width: 786px) {
+  .my-projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .pro {
   text-decoration: none;
   background-color: #400634;
   height: 400px;
+  margin: 10px;
 }
 .pro img {
   height: 400px;
 }
 
 .projects p {
-  display: block;
+  margin: 20px;
+  color: azure;
+  text-align: center;
 }
 
 .footer {
-  color: blue;
+  color: #a88fd8;
 }
 
 .footer {
@@ -273,14 +286,13 @@ body {
 }
 .footer ul li {
   text-decoration: none;
+  color: #dabed7;
 }
 .footer ul li a {
-  color: #1223d6;
+  color: #dabed7;
 }
 
 .footer p {
-  display: flex;
-  color: rgb(231, 234, 228);
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  margin: 20px;
 }

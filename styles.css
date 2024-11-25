@@ -207,6 +207,7 @@ body {
 }
 
 #unique {
+  margin: 10px;
   height: 250px;
   max-width: 400px;
   border-radius: 30px;

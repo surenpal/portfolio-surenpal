@@ -1,20 +1,14 @@
-const the_animation = document.querySelectorAll(".animation");
+document.addEventListener('DOMContentLoaded', function() {
+    // Your JavaScript code here
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("scroll-animation");
-      } else {
-        entry.target.classList.remove("scroll-animation");
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
+    // Example: Display an alert when the page loads
+    alert('Welcome to my portfolio!');
 
-for (let i = 0; i < the_animation.length; i++) {
-  const elements = the_animation[i];
-
-  observer.observe(elements);
-}
+    // Example: Add an event listener to a button
+    const button = document.getElementById('myButton');
+    if (button) {
+        button.addEventListener('click', function() {
+            alert('Button clicked!');
+        });
+    }
+});
